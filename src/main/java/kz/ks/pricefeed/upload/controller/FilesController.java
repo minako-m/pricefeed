@@ -23,7 +23,6 @@ import kz.ks.pricefeed.upload.message.ResponseMessage;
 import kz.ks.pricefeed.upload.service.FilesStorageService;
 
 @Controller
-@CrossOrigin("http://localhost:8081")
 public class FilesController {
 
     @Autowired

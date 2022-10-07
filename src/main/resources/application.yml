@@ -1,0 +1,4 @@
+server:
+  port: 8081
+upload:
+  path: ./upload_files
