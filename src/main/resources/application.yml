@@ -13,10 +13,10 @@ spring:
     password:
 
   jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
     properties:
       hibernate:
-        jdbc:
-          lob:
-            non_contextual_creation: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        ddl-auto: create
+        temp:
+          use_jdbc_metadata_defaults: 'true'
