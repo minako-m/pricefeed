@@ -2,7 +2,10 @@ server:
   port: 8081
 upload:
   path: ./upload_files
-spring.servlet.multipart.max-file-size: 2MB
+spring:
+  servlet:
+    multipart:
+      max-file-size: 2MB
 spring.servlet.multipart.max-request-size: 2MB
 
 spring.datasource.url: jdbc:postgresql://localhost:5432/testdb
