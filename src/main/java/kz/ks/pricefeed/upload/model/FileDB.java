@@ -18,16 +18,15 @@ public class FileDB {
     private String name;
     private String type;
 
-    @Lob
-    private byte[] data;
+    private String storageId;
 
     public FileDB() {
     }
 
-    public FileDB(String name, String type, byte[] data) {
+    public FileDB(String name, String type, String storageId) {
         this.name = name;
         this.type = type;
-        this.data = data;
+        this.storageId = storageId;
     }
 
     public String getId() {
@@ -50,12 +49,11 @@ public class FileDB {
         this.type = type;
     }
 
-    public byte[] getData() {
-        return data;
+    public String getStorageId() {
+        return storageId;
     }
 
-    public void setData(byte[] data) {
-        this.data = data;
+    public void setStorageId(String storageId) {
+        this.storageId = storageId;
     }
-
 }

@@ -1,19 +1,8 @@
 package kz.ks.pricefeed.upload.service;
 
-import java.nio.file.Path;
-import java.util.stream.Stream;
-
-import org.springframework.core.io.Resource;
-import org.springframework.web.multipart.MultipartFile;
+import java.io.InputStream;
 
 public interface FilesStorageService {
-    void init();
-
-    void save(MultipartFile file);
-
-    Resource load(String filename);
-
-    void deleteAll();
-
-    Stream<Path> loadAll();
+    String save(InputStream data);
+    byte[] read(String storageId);
 }
