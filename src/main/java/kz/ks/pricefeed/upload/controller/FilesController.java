@@ -33,7 +33,7 @@ public class FilesController {
     public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
         String message = "";
         try {
-            var storageId = storageService.save(file.getInputStream());
+            var storageId = storageService.save(file.getInputStream(), file.getOriginalFilename());
             informationStorageService.store(file, storageId);
 
             message = "Uploaded the file successfully: " + file.getOriginalFilename();
@@ -61,12 +61,12 @@ public class FilesController {
         return ResponseEntity.status(HttpStatus.OK).body(files);
     }
 
-    @GetMapping("/files/{id}")
+    /*@GetMapping("/files/{id}")
     public ResponseEntity<byte[]> getFile(@PathVariable String id) {
         FileDB fileDB = informationStorageService.getFile(id);
 
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileDB.getName() + "\"")
                 .body(storageService.read(fileDB.getStorageId()));
-    }
+    }*/
 }
