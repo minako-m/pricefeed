@@ -18,15 +18,12 @@ public class FileDB {
     private String name;
     private String type;
 
-    private String storageId;
-
     public FileDB() {
     }
 
-    public FileDB(String name, String type, String storageId) {
+    public FileDB(String name, String type) {
         this.name = name;
         this.type = type;
-        this.storageId = storageId;
     }
 
     public String getId() {
@@ -47,13 +44,5 @@ public class FileDB {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public String getStorageId() {
-        return storageId;
-    }
-
-    public void setStorageId(String storageId) {
-        this.storageId = storageId;
     }
 }

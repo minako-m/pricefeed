@@ -9,7 +9,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface FilesInformationStorageService {
-    FileDB store(MultipartFile file, String storageId) throws IOException;
+    FileDB store(MultipartFile file) throws IOException;
     FileDB getFile(String id);
     Stream<FileDB> getAllFiles();
 }

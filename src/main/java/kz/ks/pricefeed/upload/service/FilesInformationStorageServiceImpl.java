@@ -16,9 +16,9 @@ public class FilesInformationStorageServiceImpl implements FilesInformationStora
     @Autowired
     private FileDBRepository fileDBRepository;
 
-    public FileDB store(MultipartFile file, String storageId) throws IOException {
+    public FileDB store(MultipartFile file) throws IOException {
         String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-        FileDB FileDB = new FileDB(fileName, file.getContentType(), storageId);
+        FileDB FileDB = new FileDB(fileName, file.getContentType());
 
         return fileDBRepository.save(FileDB);
     }

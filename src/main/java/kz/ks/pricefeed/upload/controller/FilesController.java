@@ -33,8 +33,8 @@ public class FilesController {
     public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
         String message = "";
         try {
-            var storageId = storageService.save(file.getInputStream(), file.getOriginalFilename());
-            informationStorageService.store(file, storageId);
+            var fileInfo = informationStorageService.store(file);
+            storageService.save(file.getInputStream(), fileInfo.getId());
 
             message = "Uploaded the file successfully: " + file.getOriginalFilename();
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
