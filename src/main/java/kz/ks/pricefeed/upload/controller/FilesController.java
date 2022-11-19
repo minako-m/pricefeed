@@ -3,8 +3,12 @@ package kz.ks.pricefeed.upload.controller;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import kz.ks.pricefeed.upload.job.FileProcessingJob;
 import kz.ks.pricefeed.upload.service.FilesInformationStorageService;
 import kz.ks.pricefeed.upload.service.FilesStorageService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.jobrunr.scheduling.JobScheduler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -22,12 +26,14 @@ import kz.ks.pricefeed.upload.message.ResponseMessage;
 import kz.ks.pricefeed.upload.model.FileDB;
 
 @Controller
+@RequiredArgsConstructor
+@Log4j2
 public class FilesController {
 
-    @Autowired
-    FilesInformationStorageService informationStorageService;
-    @Autowired
-    FilesStorageService storageService;
+    private final FilesInformationStorageService informationStorageService;
+    private final FilesStorageService storageService;
+    private final JobScheduler jobScheduler;
+    private final FileProcessingJob fileProcessingJob;
 
     @PostMapping("/upload")
     public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
@@ -35,6 +41,10 @@ public class FilesController {
         try {
             var fileInfo = informationStorageService.store(file);
             storageService.save(file.getInputStream(), fileInfo.getId());
+
+            log.info("Starting job");
+            jobScheduler.enqueue(() -> fileProcessingJob.process(fileInfo.getId()));
+            log.info("Started job");
 
             message = "Uploaded the file successfully: " + file.getOriginalFilename();
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
@@ -52,10 +62,12 @@ public class FilesController {
                     .path("/files/")
                     .path(dbFile.getId())
                     .toUriString();
-            return new ResponseFile(
-                    dbFile.getName(),
-                    fileDownloadUri,
-                    dbFile.getType());
+            return ResponseFile.builder()
+                    .name(dbFile.getName())
+                    .url(fileDownloadUri)
+                    .type(dbFile.getType())
+                    .state(dbFile.getState())
+                    .build();
         }).collect(Collectors.toList());
 
         return ResponseEntity.status(HttpStatus.OK).body(files);

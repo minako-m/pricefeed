@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface FilesInformationStorageService {
     FileDB store(MultipartFile file) throws IOException;
+    void save(FileDB file);
     FileDB getFile(String id);
     Stream<FileDB> getAllFiles();
 }

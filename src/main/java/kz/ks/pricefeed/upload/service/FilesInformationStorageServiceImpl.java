@@ -3,6 +3,7 @@ package kz.ks.pricefeed.upload.service;
 import java.io.IOException;
 import java.util.stream.Stream;
 
+import kz.ks.pricefeed.upload.model.ProcessingState;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -18,9 +19,18 @@ public class FilesInformationStorageServiceImpl implements FilesInformationStora
 
     public FileDB store(MultipartFile file) throws IOException {
         String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-        FileDB FileDB = new FileDB(fileName, file.getContentType());
+        FileDB fileDB = FileDB.builder()
+                .name(fileName)
+                .type(file.getContentType())
+                .state(ProcessingState.NEW)
+                .build();
 
-        return fileDBRepository.save(FileDB);
+        return fileDBRepository.save(fileDB);
+    }
+
+    @Override
+    public void save(FileDB file) {
+        fileDBRepository.save(file);
     }
 
     public FileDB getFile(String id) {

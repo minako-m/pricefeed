@@ -11,7 +11,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/upload
     username: postgres
     password: postgres
-
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,3 +19,11 @@ spring:
       hibernate:
         temp:
           use_jdbc_metadata_defaults: 'true'
+org:
+  jobrunr:
+    job-scheduler:
+      enabled: true
+    background-job-server:
+      enabled: true
+    dashboard:
+      enabled: true
