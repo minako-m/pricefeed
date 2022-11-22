@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kaspi_catalog date="2022-10-09 00:14"
+			   xmlns="kaspiShopping">
+	<company>Sulpak</company>
+	<merchantid>Sulpak</merchantid>
+	<offers>
+		<offer sku="4787">
+			<model>Телефон Panasonic KX-TS 2350CAH</model>
+			<brand>Panasonic</brand>
+			<availabilities>
+				<availability available="yes" storeId="7275"/>
+			</availabilities>
+			<cityprices>
+				<cityprice cityId="750000000">1050</cityprice>
+			</cityprices>
+		</offer>
+		<offer sku="8469">
+			<model>Утюг Vitek VT-1201</model>
+			<brand>Vitek</brand>
+			<availabilities>
+				<availability available="yes" storeId="970"/>
+				<availability available="yes" storeId="1315"/>
+				<availability available="yes" storeId="1666"/>
+				<availability available="yes" storeId="2765"/>
+				<availability available="yes" storeId="3976"/>
+				<availability available="yes" storeId="4114"/>
+				<availability available="yes" storeId="4419"/>
+				<availability available="yes" storeId="5773"/>
+				<availability available="yes" storeId="5868"/>
+				<availability available="yes" storeId="5906"/>
+				<availability available="yes" storeId="5928"/>
+				<availability available="yes" storeId="6051"/>
+				<availability available="yes" storeId="6069"/>
+				<availability available="yes" storeId="6413"/>
+				<availability available="yes" storeId="6914"/>
+				<availability available="yes" storeId="6966"/>
+				<availability available="yes" storeId="7116"/>
+				<availability available="yes" storeId="7150"/>
+				<availability available="yes" storeId="7239"/>
+				<availability available="yes" storeId="7258"/>
+				<availability available="yes" storeId="7275"/>
+				<availability available="yes" storeId="7350"/>
+				<availability available="yes" storeId="7377"/>
+				<availability available="yes" storeId="7456"/>
+				<availability available="yes" storeId="7474"/>
+				<availability available="yes" storeId="7491"/>
+				<availability available="yes" storeId="7525"/>
+				<availability available="yes" storeId="7543"/>
+				<availability available="yes" storeId="7595"/>
+				<availability available="yes" storeId="7612"/>
+				<availability available="yes" storeId="7807"/>
+				<availability available="yes" storeId="7824"/>
+				<availability available="yes" storeId="7840"/>
+				<availability available="yes" storeId="7907"/>
+				<availability available="yes" storeId="7954"/>
+				<availability available="yes" storeId="8003"/>
+				<availability available="yes" storeId="8040"/>
+				<availability available="yes" storeId="8092"/>
+				<availability available="yes" storeId="8119"/>
+				<availability available="yes" storeId="8152"/>
+				<availability available="yes" storeId="8186"/>
+				<availability available="yes" storeId="8282"/>
+				<availability available="yes" storeId="8335"/>
+			</availabilities>
+			<price>14990</price>
+		</offer>
+		<offer sku="8504">
+			<model>Машинка для стрижки Vitek VT-1355</model>
+			<brand>Vitek</brand>
+			<availabilities>
+				<availability available="yes" storeId="1081"/>
+				<availability available="yes" storeId="1655"/>
+				<availability available="yes" storeId="2511"/>
+				<availability available="yes" storeId="2565"/>
+				<availability available="yes" storeId="2588"/>
+				<availability available="yes" storeId="2868"/>
+				<availability available="yes" storeId="3019"/>
+				<availability available="yes" storeId="3169"/>
+				<availability available="yes" storeId="3629"/>
+				<availability available="yes" storeId="3874"/>
+				<availability available="yes" storeId="3931"/>
+				<availability available="yes" storeId="3976"/>
+				<availability available="yes" storeId="4087"/>
+				<availability available="yes" storeId="4607"/>
+				<availability available="yes" storeId="5773"/>
+				<availability available="yes" storeId="5850"/>
+				<availability available="yes" storeId="6069"/>
+				<availability available="yes" storeId="6679"/>
+				<availability available="yes" storeId="6843"/>
+				<availability available="yes" storeId="6931"/>
+				<availability available="yes" storeId="7099"/>
+				<availability available="yes" storeId="7116"/>
+				<availability available="yes" storeId="7168"/>
+				<availability available="yes" storeId="7222"/>
+				<availability available="yes" storeId="7239"/>
+				<availability available="yes" storeId="7275"/>
+				<availability available="yes" storeId="7433"/>
+				<availability available="yes" storeId="7507"/>
+				<availability available="yes" storeId="7525"/>
+				<availability available="yes" storeId="7543"/>
+				<availability available="yes" storeId="7595"/>
+				<availability available="yes" storeId="7738"/>
+				<availability available="yes" storeId="7755"/>
+				<availability available="yes" storeId="7807"/>
+				<availability available="yes" storeId="7954"/>
+				<availability available="yes" storeId="8003"/>
+				<availability available="yes" storeId="8040"/>
+			</availabilities>
+			<price>10990</price>
+		</offer>
+		<offer sku="11778">
+			<model>Весы напольные Scarlett SC-217</model>
+			<brand>Scarlett</brand>
+			<availabilities>
+				<availability available="yes" storeId="4419"/>
+				<availability available="yes" storeId="7133"/>
+				<availability available="yes" storeId="7222"/>
+				<availability available="yes" storeId="7595"/>
+				<availability available="yes" storeId="7807"/>
+				<availability available="yes" storeId="7824"/>
+				<availability available="yes" storeId="7907"/>
+				<availability available="yes" storeId="8263"/>
+			</availabilities>
+			<price>4990</price>
+		</offer>
+		<offer sku="13014">
+			<model>Насадки для зубной щетки Oral-B 3D White BR EB 18-2 MN</model>
+			<brand>Braun</brand>
+			<availabilities>
+				<availability available="yes" storeId="2805"/>
+				<availability available="yes" storeId="3207"/>
+				<availability available="yes" storeId="3976"/>
+				<availability available="yes" storeId="4114"/>
+				<availability available="yes" storeId="4440"/>
+				<availability available="yes" storeId="5906"/>
+				<availability available="yes" storeId="5928"/>
+				<availability available="yes" storeId="6128"/>
+				<availability available="yes" storeId="6147"/>
+			</availabilities>
+			<price>7890</price>
+		</offer>
+		<offer sku="15768">
+			<model>Телефон Panasonic KX-TS2350CA C</model>
+			<brand>Panasonic</brand>
+			<availabilities>
+				<availability available="yes" storeId="6931"/>
+				<availability available="yes" storeId="7275"/>
+			</availabilities>
+			<price>5990</price>
+		</offer>
+		<offer sku="17281">
+			<model>Батарейки Varta Longlife Extra Mignon1.5V-LR06/AA</model>
+			<brand>Varta</brand>
+			<availabilities>
+				<availability available="yes" storeId="821"/>
+				<availability available="yes" storeId="864"/>
+				<availability available="yes" storeId="894"/>
+				<availability available="yes" storeId="896"/>
+				<availability available="yes" storeId="902"/>
+				<availability available="yes" storeId="1644"/>
+				<availability available="yes" storeId="2036"/>
+				<availability available="yes" storeId="2079"/>
+				<availability available="yes" storeId="2485"/>
+				<availability available="yes" storeId="2511"/>
+				<availability available="yes" storeId="2805"/>
+				<availability available="yes" storeId="3128"/>
+				<availability available="yes" storeId="3245"/>
+				<availability available="yes" storeId="4087"/>
+				<availability available="yes" storeId="4200"/>
+				<availability available="yes" storeId="5813"/>
+				<availability available="yes" storeId="6655"/>
+				<availability available="yes" storeId="7350"/>
+				<availability available="yes" storeId="7970"/>
+				<availability available="yes" storeId="8186"/>
+			</availabilities>
+			<deliveryOptions>
+				<deliveryOption city="191010000" priceToDoor="0" timeToDoor="8"/>
+				<deliveryOption city="512610000" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="351810000" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="111810000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="151010000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="631010000" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="551610000" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="551010000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="433220100" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="431010000" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="591010000" priceToDoor="0" timeToDoor="14"/>
+				<deliveryOption city="632810000" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="195620100" priceToDoor="0" timeToDoor="7"/>
+				<deliveryOption city="111010000" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="191610000" priceToDoor="0" timeToDoor="3"/>
+				<deliveryOption city="471810000" priceToDoor="0" timeToDoor="15"/>
+				<deliveryOption city="273620100" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="515420100" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="311010000" priceToDoor="0" timeToDoor="8"/>
+				<deliveryOption city="117020100" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="473630100" priceToDoor="0" timeToDoor="16"/>
+				<deliveryOption city="195220100" priceToDoor="0" timeToDoor="3"/>
+				<deliveryOption city="352310000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="552210000" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="156420100" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="196220100" priceToDoor="0" timeToDoor="4"/>
+				<deliveryOption city="392410000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="316220100" priceToDoor="0" timeToDoor="9"/>
+				<deliveryOption city="351610000" priceToDoor="0" timeToDoor="9"/>
+				<deliveryOption city="634820100" priceToDoor="0" timeToDoor="14"/>
+				<deliveryOption city="612010000" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="233620100" priceToDoor="0" timeToDoor="14"/>
+				<deliveryOption city="194020100" priceToDoor="0" timeToDoor="4"/>
+				<deliveryOption city="314851205" priceToDoor="0" timeToDoor="8"/>
+				<deliveryOption city="634620100" priceToDoor="0" timeToDoor="15"/>
+				<deliveryOption city="474239100" priceToDoor="0" timeToDoor="15"/>
+				<deliveryOption city="116651100" priceToDoor="0" timeToDoor="9"/>
+				<deliveryOption city="113220100" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="100692388" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="352210000" priceToDoor="0" timeToDoor="4"/>
+				<deliveryOption city="633420100" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="117055900" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="353220100" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="514420100" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="395430100" priceToDoor="0" timeToDoor="15"/>
+				<deliveryOption city="636820100" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="391610000" priceToDoor="0" timeToDoor="11"/>
+			</deliveryOptions>
+			<price>1990</price>
+		</offer>
+		<offer sku="17358">
+			<model>Фильтр для воды Аквафор B5 (B100-5)</model>
+			<brand>Аквафор</brand>
+			<availabilities>
+				<availability available="yes" storeId="779"/>
+				<availability available="yes" storeId="821"/>
+				<availability available="yes" storeId="864"/>
+				<availability available="yes" storeId="896"/>
+				<availability available="yes" storeId="902"/>
+				<availability available="yes" storeId="928"/>
+				<availability available="yes" storeId="942"/>
+				<availability available="yes" storeId="970"/>
+				<availability available="yes" storeId="984"/>
+				<availability available="yes" storeId="997"/>
+				<availability available="yes" storeId="1011"/>
+				<availability available="yes" storeId="1053"/>
+				<availability available="yes" storeId="1067"/>
+				<availability available="yes" storeId="1081"/>
+				<availability available="yes" storeId="1095"/>
+				<availability available="yes" storeId="1137"/>
+				<availability available="yes" storeId="1193"/>
+				<availability available="yes" storeId="1204"/>
+				<availability available="yes" storeId="1231"/>
+				<availability available="yes" storeId="1273"/>
+				<availability available="yes" storeId="1287"/>
+				<availability available="yes" storeId="1301"/>
+				<availability available="yes" storeId="1315"/>
+				<availability available="yes" storeId="1357"/>
+				<availability available="yes" storeId="1573"/>
+				<availability available="yes" storeId="1644"/>
+				<availability available="yes" storeId="1655"/>
+				<availability available="yes" storeId="1666"/>
+				<availability available="yes" storeId="1718"/>
+				<availability available="yes" storeId="1743"/>
+				<availability available="yes" storeId="1758"/>
+				<availability available="yes" storeId="1770"/>
+				<availability available="yes" storeId="1784"/>
+				<availability available="yes" storeId="1809"/>
+				<availability available="yes" storeId="1820"/>
+				<availability available="yes" storeId="1864"/>
+				<availability available="yes" storeId="1987"/>
+				<availability available="yes" storeId="2000"/>
+				<availability available="yes" storeId="2020"/>
+				<availability available="yes" storeId="2036"/>
+				<availability available="yes" storeId="2053"/>
+				<availability available="yes" storeId="2066"/>
+				<availability available="yes" storeId="2079"/>
+				<availability available="yes" storeId="2098"/>
+				<availability available="yes" storeId="2116"/>
+				<availability available="yes" storeId="2133"/>
+				<availability available="yes" storeId="2355"/>
+				<availability available="yes" storeId="2390"/>
+				<availability available="yes" storeId="2404"/>
+				<availability available="yes" storeId="2413"/>
+				<availability available="yes" storeId="2428"/>
+				<availability available="yes" storeId="2456"/>
+				<availability available="yes" storeId="2485"/>
+				<availability available="yes" storeId="2511"/>
+				<availability available="yes" storeId="2530"/>
+				<availability available="yes" storeId="2565"/>
+				<availability available="yes" storeId="2588"/>
+				<availability available="yes" storeId="2613"/>
+				<availability available="yes" storeId="2653"/>
+				<availability available="yes" storeId="2747"/>
+				<availability available="yes" storeId="2765"/>
+				<availability available="yes" storeId="2785"/>
+				<availability available="yes" storeId="2805"/>
+				<availability available="yes" storeId="2813"/>
+				<availability available="yes" storeId="2850"/>
+				<availability available="yes" storeId="2868"/>
+				<availability available="yes" storeId="2886"/>
+				<availability available="yes" storeId="2894"/>
+				<availability available="yes" storeId="2993"/>
+				<availability available="yes" storeId="3019"/>
+				<availability available="yes" storeId="3050"/>
+				<availability available="yes" storeId="3058"/>
+				<availability available="yes" storeId="3090"/>
+				<availability available="yes" storeId="3110"/>
+				<availability available="yes" storeId="3128"/>
+				<availability available="yes" storeId="3169"/>
+				<availability available="yes" storeId="3189"/>
+				<availability available="yes" storeId="3207"/>
+				<availability available="yes" storeId="3245"/>
+				<availability available="yes" storeId="3466"/>
+				<availability available="yes" storeId="3629"/>
+				<availability available="yes" storeId="3805"/>
+				<availability available="yes" storeId="3874"/>
+				<availability available="yes" storeId="3931"/>
+				<availability available="yes" storeId="3952"/>
+				<availability available="yes" storeId="3976"/>
+				<availability available="yes" storeId="3984"/>
+				<availability available="yes" storeId="4022"/>
+				<availability available="yes" storeId="4071"/>
+				<availability available="yes" storeId="4087"/>
+				<availability available="yes" storeId="4114"/>
+				<availability available="yes" storeId="4183"/>
+				<availability available="yes" storeId="4200"/>
+				<availability available="yes" storeId="4225"/>
+				<availability available="yes" storeId="4243"/>
+				<availability available="yes" storeId="4376"/>
+				<availability available="yes" storeId="4398"/>
+				<availability available="yes" storeId="4419"/>
+				<availability available="yes" storeId="4440"/>
+				<availability available="yes" storeId="4458"/>
+				<availability available="yes" storeId="4514"/>
+				<availability available="yes" storeId="4532"/>
+				<availability available="yes" storeId="4551"/>
+				<availability available="yes" storeId="4570"/>
+				<availability available="yes" storeId="4588"/>
+				<availability available="yes" storeId="4607"/>
+				<availability available="yes" storeId="4626"/>
+				<availability available="yes" storeId="4648"/>
+				<availability available="yes" storeId="4680"/>
+				<availability available="yes" storeId="4698"/>
+				<availability available="yes" storeId="5715"/>
+				<availability available="yes" storeId="5733"/>
+				<availability available="yes" storeId="5752"/>
+				<availability available="yes" storeId="5773"/>
+				<availability available="yes" storeId="5792"/>
+				<availability available="yes" storeId="5813"/>
+				<availability available="yes" storeId="5850"/>
+				<availability available="yes" storeId="5868"/>
+				<availability available="yes" storeId="5887"/>
+				<availability available="yes" storeId="5906"/>
+				<availability available="yes" storeId="5928"/>
+				<availability available="yes" storeId="5971"/>
+				<availability available="yes" storeId="6015"/>
+				<availability available="yes" storeId="6034"/>
+				<availability available="yes" storeId="6051"/>
+				<availability available="yes" storeId="6069"/>
+				<availability available="yes" storeId="6093"/>
+				<availability available="yes" storeId="6128"/>
+				<availability available="yes" storeId="6147"/>
+				<availability available="yes" storeId="6166"/>
+				<availability available="yes" storeId="6360"/>
+				<availability available="yes" storeId="6377"/>
+				<availability available="yes" storeId="6413"/>
+				<availability available="yes" storeId="6638"/>
+				<availability available="yes" storeId="6655"/>
+				<availability available="yes" storeId="6679"/>
+				<availability available="yes" storeId="6696"/>
+				<availability available="yes" storeId="6717"/>
+				<availability available="yes" storeId="6744"/>
+				<availability available="yes" storeId="6762"/>
+				<availability available="yes" storeId="6780"/>
+				<availability available="yes" storeId="6825"/>
+				<availability available="yes" storeId="6843"/>
+				<availability available="yes" storeId="6892"/>
+				<availability available="yes" storeId="6914"/>
+				<availability available="yes" storeId="6931"/>
+				<availability available="yes" storeId="6949"/>
+				<availability available="yes" storeId="6966"/>
+				<availability available="yes" storeId="7080"/>
+				<availability available="yes" storeId="7099"/>
+				<availability available="yes" storeId="7116"/>
+				<availability available="yes" storeId="7133"/>
+				<availability available="yes" storeId="7150"/>
+				<availability available="yes" storeId="7168"/>
+				<availability available="yes" storeId="7205"/>
+				<availability available="yes" storeId="7222"/>
+				<availability available="yes" storeId="7239"/>
+				<availability available="yes" storeId="7258"/>
+				<availability available="yes" storeId="7275"/>
+				<availability available="yes" storeId="7296"/>
+				<availability available="yes" storeId="7331"/>
+				<availability available="yes" storeId="7350"/>
+				<availability available="yes" storeId="7377"/>
+				<availability available="yes" storeId="7433"/>
+				<availability available="yes" storeId="7456"/>
+				<availability available="yes" storeId="7474"/>
+				<availability available="yes" storeId="7491"/>
+				<availability available="yes" storeId="7507"/>
+				<availability available="yes" storeId="7525"/>
+				<availability available="yes" storeId="7543"/>
+				<availability available="yes" storeId="7560"/>
+				<availability available="yes" storeId="7568"/>
+				<availability available="yes" storeId="7579"/>
+				<availability available="yes" storeId="7595"/>
+				<availability available="yes" storeId="7612"/>
+				<availability available="yes" storeId="7629"/>
+				<availability available="yes" storeId="7656"/>
+				<availability available="yes" storeId="7679"/>
+				<availability available="yes" storeId="7695"/>
+				<availability available="yes" storeId="7720"/>
+				<availability available="yes" storeId="7738"/>
+				<availability available="yes" storeId="7755"/>
+				<availability available="yes" storeId="7788"/>
+				<availability available="yes" storeId="7807"/>
+				<availability available="yes" storeId="7824"/>
+				<availability available="yes" storeId="7840"/>
+				<availability available="yes" storeId="7875"/>
+				<availability available="yes" storeId="7891"/>
+				<availability available="yes" storeId="7907"/>
+				<availability available="yes" storeId="7954"/>
+				<availability available="yes" storeId="7970"/>
+				<availability available="yes" storeId="8003"/>
+				<availability available="yes" storeId="8020"/>
+				<availability available="yes" storeId="8040"/>
+				<availability available="yes" storeId="8057"/>
+				<availability available="yes" storeId="8074"/>
+				<availability available="yes" storeId="8092"/>
+				<availability available="yes" storeId="8119"/>
+				<availability available="yes" storeId="8136"/>
+				<availability available="yes" storeId="8152"/>
+				<availability available="yes" storeId="8186"/>
+				<availability available="yes" storeId="8205"/>
+				<availability available="yes" storeId="8263"/>
+				<availability available="yes" storeId="8282"/>
+				<availability available="yes" storeId="8335"/>
+				<availability available="yes" storeId="8359"/>
+				<availability available="yes" storeId="8401"/>
+			</availabilities>
+			<deliveryOptions>
+				<deliveryOption city="474239100" priceToDoor="0" timeToDoor="15"/>
+			</deliveryOptions>
+			<price>2390</price>
+		</offer>
+		<offer sku="17921">
+			<model>Батарейки Varta High Energy Micro 1.5V-LR03/AAA</model>
+			<brand>Varta</brand>
+			<availabilities>
+				<availability available="yes" storeId="821"/>
+				<availability available="yes" storeId="864"/>
+				<availability available="yes" storeId="896"/>
+				<availability available="yes" storeId="902"/>
+				<availability available="yes" storeId="1644"/>
+				<availability available="yes" storeId="2020"/>
+				<availability available="yes" storeId="2036"/>
+				<availability available="yes" storeId="2079"/>
+				<availability available="yes" storeId="2485"/>
+				<availability available="yes" storeId="2511"/>
+				<availability available="yes" storeId="2530"/>
+				<availability available="yes" storeId="2805"/>
+				<availability available="yes" storeId="3128"/>
+				<availability available="yes" storeId="3189"/>
+				<availability available="yes" storeId="3245"/>
+				<availability available="yes" storeId="4087"/>
+				<availability available="yes" storeId="4095"/>
+				<availability available="yes" storeId="4200"/>
+				<availability available="yes" storeId="5813"/>
+				<availability available="yes" storeId="7350"/>
+				<availability available="yes" storeId="7970"/>
+				<availability available="yes" storeId="8186"/>
+			</availabilities>
+			<deliveryOptions>
+				<deliveryOption city="191010000" priceToDoor="0" timeToDoor="8"/>
+				<deliveryOption city="512610000" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="351810000" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="111810000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="151010000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="631010000" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="471010000" priceToDoor="0" timeToDoor="14"/>
+				<deliveryOption city="551610000" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="551010000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="433220100" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="431010000" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="591010000" priceToDoor="0" timeToDoor="14"/>
+				<deliveryOption city="632810000" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="195620100" priceToDoor="0" timeToDoor="7"/>
+				<deliveryOption city="111010000" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="191610000" priceToDoor="0" timeToDoor="3"/>
+				<deliveryOption city="471810000" priceToDoor="0" timeToDoor="15"/>
+				<deliveryOption city="273620100" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="515420100" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="311010000" priceToDoor="0" timeToDoor="8"/>
+				<deliveryOption city="117020100" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="473630100" priceToDoor="0" timeToDoor="16"/>
+				<deliveryOption city="195220100" priceToDoor="0" timeToDoor="3"/>
+				<deliveryOption city="352310000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="552210000" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="156420100" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="196220100" priceToDoor="0" timeToDoor="4"/>
+				<deliveryOption city="392410000" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="316220100" priceToDoor="0" timeToDoor="9"/>
+				<deliveryOption city="351610000" priceToDoor="0" timeToDoor="9"/>
+				<deliveryOption city="634820100" priceToDoor="0" timeToDoor="14"/>
+				<deliveryOption city="612010000" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="233620100" priceToDoor="0" timeToDoor="14"/>
+				<deliveryOption city="194020100" priceToDoor="0" timeToDoor="4"/>
+				<deliveryOption city="314851205" priceToDoor="0" timeToDoor="8"/>
+				<deliveryOption city="634620100" priceToDoor="0" timeToDoor="15"/>
+				<deliveryOption city="474239100" priceToDoor="0" timeToDoor="15"/>
+				<deliveryOption city="116651100" priceToDoor="0" timeToDoor="9"/>
+				<deliveryOption city="113220100" priceToDoor="0" timeToDoor="12"/>
+				<deliveryOption city="100692388" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="352210000" priceToDoor="0" timeToDoor="4"/>
+				<deliveryOption city="633420100" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="117055900" priceToDoor="0" timeToDoor="10"/>
+				<deliveryOption city="353220100" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="514420100" priceToDoor="0" timeToDoor="13"/>
+				<deliveryOption city="395430100" priceToDoor="0" timeToDoor="15"/>
+				<deliveryOption city="636820100" priceToDoor="0" timeToDoor="11"/>
+				<deliveryOption city="391610000" priceToDoor="0" timeToDoor="11"/>
+			</deliveryOptions>
+			<price>1990</price>
+		</offer>
+	</offers>
+</kaspi_catalog>

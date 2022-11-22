@@ -2,6 +2,8 @@ package kz.ks.pricefeed.upload.service;
 
 import org.springframework.stereotype.Service;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -23,6 +25,12 @@ public class FileStorageServiceImpl implements FilesStorageService {
             throw new RuntimeException("Could not store the file. Error: " + e.getMessage());
         }
     }
+
+    @Override
+    public InputStream openFile(String id) throws FileNotFoundException {
+        return new FileInputStream(this.root.resolve(id).toFile());
+    }
+
     //public byte[] read(String storageId) {
 
     //}

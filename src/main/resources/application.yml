@@ -27,3 +27,7 @@ org:
       enabled: true
     dashboard:
       enabled: true
+logging:
+  level:
+    kz:
+      ks: DEBUG

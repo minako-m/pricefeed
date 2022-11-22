@@ -1,5 +1,6 @@
 package kz.ks.pricefeed.upload.controller;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -73,12 +74,14 @@ public class FilesController {
         return ResponseEntity.status(HttpStatus.OK).body(files);
     }
 
-    /*@GetMapping("/files/{id}")
-    public ResponseEntity<byte[]> getFile(@PathVariable String id) {
+    @GetMapping("/files/{id}")
+    public ResponseEntity<byte[]> getFile(@PathVariable String id) throws IOException {
         FileDB fileDB = informationStorageService.getFile(id);
 
-        return ResponseEntity.ok()
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileDB.getName() + "\"")
-                .body(storageService.read(fileDB.getStorageId()));
-    }*/
+        try (var is = storageService.openFile(id)) {
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileDB.getName() + "\"")
+                    .body(is.readAllBytes());
+        }
+    }
 }
