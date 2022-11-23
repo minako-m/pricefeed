@@ -7,6 +7,6 @@ import lombok.Data;
 @Builder
 
 public class Availability {
-    private String isAvailable;
+    private boolean isAvailable;
     private String storeId;
 }

@@ -36,6 +36,11 @@ public class FileProcessingJob {
         log.info("Started file processing {}", id);
 
         var file = filesInformationStorageService.getFile(id);
+        
+        if (!ProcessingState.NEW.equals(file.getState())) {
+            log.warn("Duplicate file processing job");
+            return;
+        }
 
         log.info("Processing file {}", file.getName());
         try (var is = filesStorageService.openFile(id)) {
