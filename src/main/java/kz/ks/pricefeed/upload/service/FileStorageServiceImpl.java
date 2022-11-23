@@ -31,7 +31,5 @@ public class FileStorageServiceImpl implements FilesStorageService {
         return new FileInputStream(this.root.resolve(id).toFile());
     }
 
-    //public byte[] read(String storageId) {
 
-    //}
 }
