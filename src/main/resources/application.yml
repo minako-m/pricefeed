@@ -23,6 +23,10 @@ spring:
     multipart:
       max-file-size: 2MB
       max-request-size: 2MB
+  datasource:
+    url: jdbc:postgresql://localhost:5432/amiramahmedjan
+    username: amiramahmedjan
+    password:
   jpa:
     hibernate:
       ddl-auto: update
