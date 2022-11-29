@@ -1,9 +1,10 @@
 package kz.ks.pricefeed.upload.job.xml;
 
+import kz.ks.pricefeed.upload.kafka.OfferProducer;
 import kz.ks.pricefeed.upload.offer.Availability;
 import kz.ks.pricefeed.upload.offer.OfferDTO;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.stereotype.Component;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
@@ -13,7 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Log4j2
+@RequiredArgsConstructor
 public class OfferReader extends DefaultHandler {
+    private final OfferProducer offerProducer;
 
     private StringBuilder elementValue;
     private OfferDTO.OfferDTOBuilder offerDTOBuilder;
@@ -30,13 +33,10 @@ public class OfferReader extends DefaultHandler {
                 offerDTOBuilder.sku(attr.getValue("sku"));
                 break;
             case "brand":
-                offerDTOBuilder = OfferDTO.builder();
                 offerDTOBuilder.brand(qName);
             case "model":
-                offerDTOBuilder = OfferDTO.builder();
                 offerDTOBuilder.model(qName);
             case AVAILABILITIES_TAG_NAME:
-                offerDTOBuilder = OfferDTO.builder();
                 availabilities = new ArrayList<>();
             case "availability":
                 availabilities.add(
@@ -70,7 +70,7 @@ public class OfferReader extends DefaultHandler {
     }
 
     protected void processOffer(OfferDTO offer) {
-        log.info(offer);
+        offerProducer.send(offer);
     }
 
     @Override

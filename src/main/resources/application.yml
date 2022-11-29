@@ -2,15 +2,27 @@ server:
   port: 8081
 upload:
   path: ./upload_files
+  topic: pricefeed_offer
 spring:
+  kafka:
+    producer:
+      bootstrap-servers: ks-dev-docker2.ks.bc:9092
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      bootstrap-servers: ks-dev-docker2.ks.bc:9092
+      auto-offset-reset: latest
+      group-id: pricefeed-dev
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: kz.ks.*
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      client-id: pricefeed-dev
   servlet:
     multipart:
       max-file-size: 2MB
       max-request-size: 2MB
-  datasource:
-    url: jdbc:postgresql://localhost:5432/amiramahmedjan
-    username: amiramahmedjan
-    password:
   jpa:
     hibernate:
       ddl-auto: update

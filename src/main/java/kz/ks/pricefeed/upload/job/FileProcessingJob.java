@@ -1,6 +1,7 @@
 package kz.ks.pricefeed.upload.job;
 
 import kz.ks.pricefeed.upload.job.xml.OfferReader;
+import kz.ks.pricefeed.upload.kafka.OfferProducer;
 import kz.ks.pricefeed.upload.model.ProcessingState;
 import kz.ks.pricefeed.upload.service.FilesInformationStorageService;
 import kz.ks.pricefeed.upload.service.FilesStorageService;
@@ -30,6 +31,7 @@ import java.io.InputStream;
 public class FileProcessingJob {
     private final FilesInformationStorageService filesInformationStorageService;
     private final FilesStorageService filesStorageService;
+    private final OfferProducer offerProducer;
 
     @Job(name = "file_processing_job")
     public void process(String id) throws InterruptedException {
@@ -64,7 +66,7 @@ public class FileProcessingJob {
             factory.setFeature("http://xml.org/sax/features/validation", false);
             factory.setNamespaceAware(true);
             SAXParser saxParser = factory.newSAXParser();
-            var reader = new OfferReader();
+            var reader = new OfferReader(offerProducer);
             saxParser.parse(is, reader);
         }
     }
