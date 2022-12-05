@@ -16,4 +16,5 @@ public class OfferDTO {
     private String model;
     private String brand;
     private List<Availability> availabilityList;
+    private List<CityPrice> cityPriceList;
 }

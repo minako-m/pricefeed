@@ -4,12 +4,20 @@ upload:
   path: ./upload_files
   topic: pricefeed_offer
 spring:
+  data:
+    mongodb:
+      #uri: mongodb+srv://root:example@localhost/offer
+      database: offer
+      host: localhost
+      password: example
+      user: root
+      authentication-database: admin
   kafka:
     producer:
-      bootstrap-servers: ks-dev-docker2.ks.bc:9092
+      bootstrap-servers: localhost:9092
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
-      bootstrap-servers: ks-dev-docker2.ks.bc:9092
+      bootstrap-servers: localhost:9092
       auto-offset-reset: latest
       group-id: pricefeed-dev
       properties:
@@ -37,6 +45,8 @@ spring:
           use_jdbc_metadata_defaults: 'true'
 org:
   jobrunr:
+    database:
+      type: sql
     job-scheduler:
       enabled: true
     background-job-server:
