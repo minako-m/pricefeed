@@ -1,5 +1,7 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/upload
+    url: jdbc:postgresql://localhost:5432/am_upload
     username: postgres
     password: postgres
+server:
+  port: 8082
