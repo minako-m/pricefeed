@@ -53,3 +53,7 @@ logging:
   level:
     kz:
       ks: DEBUG
+springdoc:
+  swagger-ui:
+    enabled: true
+  packages-to-scan: kz.ks

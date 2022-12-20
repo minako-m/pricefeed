@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import kz.ks.pricefeed.upload.job.FileProcessingJob;
 import kz.ks.pricefeed.upload.service.FilesInformationStorageService;
 import kz.ks.pricefeed.upload.service.FilesStorageService;
@@ -13,12 +16,10 @@ import org.jobrunr.scheduling.JobScheduler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -29,6 +30,7 @@ import kz.ks.pricefeed.upload.model.FileDB;
 @Controller
 @RequiredArgsConstructor
 @Log4j2
+@Tag(name = "Files", description = "Uploaded files information")
 public class FilesController {
 
     private final FilesInformationStorageService informationStorageService;
@@ -36,8 +38,10 @@ public class FilesController {
     private final JobScheduler jobScheduler;
     private final FileProcessingJob fileProcessingJob;
 
-    @PostMapping("/upload")
-    public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
+    @PostMapping(path = "/upload",
+            consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @Operation(summary = "Upload file")
+    public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") @RequestPart MultipartFile file) {
         String message = "";
         try {
             var fileInfo = informationStorageService.store(file);
@@ -56,6 +60,7 @@ public class FilesController {
     }
 
     @GetMapping("/files")
+    @Operation(summary = "Get all files list")
     public ResponseEntity<List<ResponseFile>> getListFiles() {
         List<ResponseFile> files = informationStorageService.getAllFiles().map(dbFile -> {
             String fileDownloadUri = ServletUriComponentsBuilder
@@ -75,7 +80,8 @@ public class FilesController {
     }
 
     @GetMapping("/files/{id}")
-    public ResponseEntity<byte[]> getFile(@PathVariable String id) throws IOException {
+    @Operation(summary = "Get file details information by id")
+    public ResponseEntity<byte[]> getFile(@PathVariable @Parameter(description = "File id") String id) throws IOException {
         FileDB fileDB = informationStorageService.getFile(id);
 
         try (var is = storageService.openFile(id)) {
