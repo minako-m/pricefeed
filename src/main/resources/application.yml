@@ -57,3 +57,12 @@ springdoc:
   swagger-ui:
     enabled: true
   packages-to-scan: kz.ks
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
+  endpoint:
+    prometheus:
+      enabled: true

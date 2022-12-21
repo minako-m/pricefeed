@@ -4,6 +4,8 @@ import io.leangen.graphql.annotations.GraphQLContext;
 import io.leangen.graphql.annotations.GraphQLMutation;
 import io.leangen.graphql.annotations.GraphQLQuery;
 import io.leangen.graphql.spqr.spring.annotations.GraphQLApi;
+import io.micrometer.core.annotation.Timed;
+import io.micrometer.core.instrument.MeterRegistry;
 import kz.ks.pricefeed.upload.graphql.model.FileFirstLineModel;
 import kz.ks.pricefeed.upload.graphql.model.FileModel;
 import kz.ks.pricefeed.upload.repository.FileDBRepository;
@@ -19,6 +21,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Optional;
+import java.util.Timer;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
@@ -27,34 +30,42 @@ import java.util.stream.Collectors;
 public class FileService {
     private final FileDBRepository repository;
     private final FilesStorageService filesStorageService;
+    private final MeterRegistry meterRegistry;
 
     @GraphQLQuery(name = "listFiles")
     public List<FileModel> listFiles() {
-        return repository.findAll().stream()
-                .map(
-                        f -> FileModel.builder()
-                                .id(f.getId())
-                                .name(f.getName())
-                                .type(f.getType())
-                                .state(f.getState())
-                                .build()
-                ).collect(Collectors.toList());
+        return meterRegistry.timer("files_timer", "method", "list")
+                .record(
+                        () -> repository.findAll().stream()
+                                .map(
+                                        f -> FileModel.builder()
+                                                .id(f.getId())
+                                                .name(f.getName())
+                                                .type(f.getType())
+                                                .state(f.getState())
+                                                .build()
+                                ).collect(Collectors.toList())
+                );
     }
 
     @GraphQLQuery(name = "findFile")
     public Optional<FileModel> findFile(String id) {
-        return repository.findById(id)
-                .map(
-                        f -> FileModel.builder()
-                                .id(f.getId())
-                                .name(f.getName())
-                                .type(f.getType())
-                                .state(f.getState())
-                                .build()
+        return meterRegistry.timer("files_timer", "method", "details")
+                .record(
+                        () -> repository.findById(id)
+                                .map(
+                                        f -> FileModel.builder()
+                                                .id(f.getId())
+                                                .name(f.getName())
+                                                .type(f.getType())
+                                                .state(f.getState())
+                                                .build()
+                                )
                 );
     }
 
     @GraphQLMutation(name = "deleteFile", description = "deletes file")
+    @Timed("files_delete")
     public void delete(String id) {
         repository.findById(id)
                 .ifPresentOrElse(
@@ -66,6 +77,7 @@ public class FileService {
     }
 
     @GraphQLQuery(name = "firstLine")
+    @Timed("files_first_line")
     public FileFirstLineModel getFirstLine(@GraphQLContext FileModel file) throws IOException {
         try (
                 var is = filesStorageService.openFile(file.getId());
